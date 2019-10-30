@@ -1,0 +1,47 @@
+<style>
+	.navibar {
+		margin: 0;
+		padding: 0;
+		font-family: Helvetica, sans-serif;
+		height: 200vh;
+
+	}
+
+
+
+
+	.nav-bar {
+		width: 100%;
+		position: fixed;
+	}
+
+	.nav-container {
+		overflow: hidden;
+		margin: 0 auto;
+	}
+</style>
+
+<div class="navibar">
+	<!-- partial:index.partial.html -->
+	<nav class="nav-bar">
+		<div class="nav-container">
+			<a href="#" id="tile1"><i class="show-on-scroll" aria-hidden="true"> Home</i></a>
+
+		</div>
+	</nav>
+
+	
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+	<script>
+		$("i.show-on-scroll").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 200) {
+				$('i.show-on-scroll').fadeIn();
+			} else {
+				$('i.show-on-scroll').fadeOut();
+			}
+		});
+	</script>
+</div>

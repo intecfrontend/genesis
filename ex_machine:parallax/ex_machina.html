@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        @font-face {
+            font-family: 'terminator real NFI';
+            src: url(terminator_real_nfi.ttf);
+            font-style: normal;
+        }
+
+
+
+        body {
+            position: relative;
+            height: 150vw;
+            width: 100vw;
+        }
+
+        .textwrapper {
+            order: 2px solid blue;
+            height: 80vh;
+            position: absolute;
+        }
+
+        .textbox {
+            position: absolute;
+            height: 150vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'terminator real NFI';
+        }
+
+        .textbox2 {
+            text-shadow: 3px 3px 10px lime;
+
+            position: absolute;
+            height: 150vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'terminator real NFI';
+            z-index: 10;
+            opacity: 0.4;
+        }
+
+        h1 {
+            margin-left: 1vw;
+            font-size: 10vw;
+            background-image: url(code.jpg);
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .fotobox {
+            position: absolute;
+            width: 100vw;
+            order: 2px solid yellow;
+            top: 10vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            height: 150vh;
+            order: 2px solid red;
+        }
+
+        .loremtext {
+            position: absolute;
+            text-align: justify;
+            width: 30vw;
+            font-family: Helvetica;
+            font-size: calc(5px + 1vw);
+            line-height: 3;
+            margin-left: 10vw;
+            top: 70vw;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+    <div class="textwrapper">
+        <div class="textbox rellax" data-rellax-speed="35">
+            <h1> EX_MACHINA</h1>
+        </div>
+        <div class="textbox2 rellax" data-rellax-speed="35">
+            <h1> EX_MACHINA</h1>
+        </div>
+    </div>
+
+    <div class="fotobox">
+        <img src="ava.png" alt="">
+    </div>
+    <div class="loremtext rellax" data-rellax-speed="100">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aspernatur adipisci quos vel in
+        quisquam, est ut quae? Dolores totam explicabo mollitia ipsa id obcaecati vero vitae sed exercitationem
+        laudantium, placeat quam ipsam, nulla illo sapiente voluptas nobis numquam laborum consectetur asperiores
+        assumenda, delectus a quis. Nisi quod voluptatum perferendis omnis? Dolorum veritatis ad quod distinctio iure,
+        laudantium nobis et molestias magni velit eligendi quidem cum ipsam saepe impedit? Magnam alias, dignissimos
+        repellendus quidem sint recusandae, reprehenderit deserunt assumenda repellat provident magni quibusdam
+        accusamus officia corrupti pariatur dolorum? Reiciendis qui omnis rerum laudantium quia fugiat quo? Perferendis
+        repudiandae et est unde! </div>
+
+
+    <!-- javascript -->
+    <script type="text/javascript" src="rellax.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax', {
+            // center: true
+            callback: function (position) {
+                // callback every position change
+                console.log(position);
+            }
+        });
+    </script>
+</body>
+
+</html>

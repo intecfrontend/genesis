@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this <span>responsive</span> page to see the effect!</p>
+  </div>
+
+  <style>
+    span {
+      color: red;
+    }
+
+    .nav-woord {
+      color: black;
+    }
+
+    .nav-woord:hover {
+      color: darkgrey;
+    }
+
+    .autorow {
+      position: relative;
+      left: 10vw;
+      top: -150px;
+    }
+  </style>
+
+  <ul style="padding-left: 5vw; padding-right: 5vw; margin-top: -70px; font-weight: bold; color: black !important"
+    class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active nav-woord" href="https://www.w3schools.com">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-woord" href="#!">Link1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-woord" href="#!">Link2</a>
+    </li>
+  </ul>
+
+  <div class="container">
+
+    <div style="margin-top: 75px" class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+    </div>
+    <!---google animate on scroll-->
+    <div class="row autorow">
+      <a href="https://www.ferrari.com/fr-FR">
+        <img data-aos="fade-right" data-aos-offset="0" data-aos-easing="ease-in-sine" src="red_car.png" alt="red car"
+          id="car">
+      </a>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    AOS.init({
+      duration: 2200,
+    })
+  </script>
+</body>
+
+
+
+
+</html>
